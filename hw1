@@ -1,0 +1,22 @@
+-- Выведите название, производителя и цену для товаров, количество которых превышает 2 
+-- (SQL - файл, скриншот, либо сам код)
+-- SELECT product_name , manufacturer , price FROM gb1.hw1 WHERE product_count > 2
+
+-- 3.  	Выведите весь ассортимент товаров марки “Samsung”
+-- SELECT * FROM gb1.hw1 WHERE manufacturer = 'Samsung'
+
+-- Выведите информацию о телефонах, где суммарный чек больше 100 000 и меньше 145 000**
+-- SELECT * FROM gb1.hw1 WHERE product_count * price >100000 and product_count * price < 145000
+
+-- *** С помощью регулярных выражений найти (можно использовать операторы “LIKE”, “RLIKE” для 4.3 ):
+-- 	4.1. Товары, в которых есть упоминание "Iphone"
+-- 	4.2. "Galaxy"
+-- 	4.3.  Товары, в которых есть ЦИФРЫ
+-- 	4.4.  Товары, в которых есть ЦИФРА "8"
+
+-- SELECT * FROM gb1.hw1 WHERE product_name LIKE '%iPhone%'
+-- SELECT * FROM gb1.hw1 WHERE product_name LIKE '%Galaxy%'
+-- SELECT * FROM gb1.hw1 WHERE product_name SIMILAR TO '%[0-9]%' 
+-- SELECT * FROM gb1.hw1 WHERE product_name SIMILAR TO '%8%' 
+
+
