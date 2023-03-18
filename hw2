@@ -65,3 +65,20 @@ SELECT
 	AS 'full_order_status'
 FROM orders
     
+-- №1.	Используя оператор ALTER TABLE, установите внешний ключ в одной из таблиц. 
+
+-- ALTER TABLE clients
+-- ADD COLUMN forg INT,
+-- ADD FOREIGN KEY (forg) REFERENCES users(id);
+
+
+-- №2.	Без оператора JOIN, верните заголовок публикации, текст с описанием, идентификатор клиента, опубликовавшего публикацию и логин данного клиента.
+-- SELECT title, full_text, user_id, login
+-- FROM posts,clients
+-- WHERE posts.user_id=clients.id;
+
+
+-- №3.	Выполните поиск  по публикациям, автором котоырх является клиент "Mikle".
+-- SELECT title, full_text, user_id
+-- FROM posts,clients
+-- WHERE posts.user_id=clients.id AND clients.login='Mikle';
